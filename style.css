@@ -7,6 +7,13 @@
 
 @font-face {
     font-family: "Roboto Condensed";
+    src: url("assets/font/RobotoCondensed-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
     src: url("assets/font/RobotoCondensed-ThinItalic.ttf") format("truetype");
     font-weight: 100;
     font-style: italic;
@@ -41,9 +48,12 @@
 }
 
 body {
+    margin: 40px 80px;
+
     background-color: #000000;
     color: #FFFFFF;
     font-family: "Roboto Condensed", sans-serif;
+    font-weight: 100;
 }
 
 h1 {
@@ -56,13 +66,20 @@ h2, h3 {
     color: #BBFF00;
 }
 
-small, p, h4, h6 {
+small, p, h4 {
     font-family: "Roboto Condensed", sans-serif;
 }
 
+h6 {
+    color: #BBFF00;
+    font-family: "Overpass Mono", monospace;
+    font-weight: 500;
+    font-size: medium;
+}
+
 .button {
-    background-color: #1a1a1a;
-    color: #FFFFFF;
+    background-color: #BBFF00;
+    color: #000000;
 
     padding: 10px 20px;
     cursor: pointer;
@@ -73,29 +90,28 @@ small, p, h4, h6 {
     white-space: nowrap;
 
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 
     margin: 0 15px;
 
-    border-radius: 12px;
     border: 2px solid #e5ff9d;
 
     box-shadow: 0 0 12.5px #BBFF00;
 }
 
 .button:hover {
-    transition: all 0.25s ease;
-    border: 2px solid #ff9d9d;
-    box-shadow: 0 0 20px #FF0000;
+    transition: all 0.4s ease;
+    border: 2px solid #f1ffca;
+    box-shadow: 0 0 20px #FFFFFF;
 }
 
 .packagebutton {
-    background-color: #1a1a1a;
-    color: #FFFFFF;
+    background-color: #BBFF00;
+    color: #000000;
 
     padding: 10px 10px;
 
-    width: 120px;
+    width: 175px;
     height: 20px;
 
     display: flex;
@@ -105,11 +121,10 @@ small, p, h4, h6 {
     white-space: nowrap;
 
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 
     margin: 0 15px;
 
-    border-radius: 12px;
     border: 2px solid #e5ff9d;
 
     box-shadow: 0 0 12.5px #BBFF00;
@@ -117,14 +132,26 @@ small, p, h4, h6 {
 }
 
 .packagebutton:hover {
-    transition: all 0.25s ease;
-    border: 2px solid #ff9d9d;
-    box-shadow: 0 0 15px #FF0000;
+    transition: all 0.4s ease;
+    border: 2px solid #f1ffca;
+    box-shadow: 0 0 20px #ffffff;
 }
 
 .profile {
     width: 150px;
     height: 150px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 5px solid #e5ff9d;
+
+    box-shadow:
+        0 0 35px #BBFF00;
+}
+
+.profilesmall {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 
     border-radius: 50%;
