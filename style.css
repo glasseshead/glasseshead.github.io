@@ -161,6 +161,12 @@ h6 {
         0 0 35px #BBFF00;
 }
 
+.rectangleImage {
+    width: 160px;
+    height: 107px;
+    object-fit: cover;
+}
+
 .displayimage {
     width: 150px;
     height: 150px;
